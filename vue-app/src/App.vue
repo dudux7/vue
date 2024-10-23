@@ -1,57 +1,46 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <RouterView />
-  </main>
+  
 </template>
 
-<style scoped>
+<script>
+
+export default {
+components: {
+
+},
+data() {
+  return {
+  }
+}
+}
+</script>
+
+<style>
+
 * {
-  margin: 0;
-  padding: 0;
+font-family: Helvetica;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
+body {
+  background-image: url('img/background.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-.wrapper {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+.main-container {
+margin: 50px;
+min-height: 250px;
 }
 
-nav {
-  display: flex;
-  gap: 20px;
+h1 {
+text-align: center;
+font-size: 42px;
+margin-bottom: 30px;
+color: #222;
 }
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-  width: 100%;
-}
-
 </style>
