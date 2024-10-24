@@ -41,12 +41,12 @@
 #nav a{
     color: #2b9dac;
     text-decoration: none;
-    margin: 12px;
+    margin: 20px;
     transition: .5s;
 }
 
 #nav a:hover{
-    color: #2cc95b;
+    color: #33a756;
 
 }
 </style>
